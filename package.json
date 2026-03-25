@@ -1,0 +1,19 @@
+{
+  "name": "frontend_parinya",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "create": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run create\" \"npm run goservergo\""
+  },
+  "author": "Paryn",
+  "license": "private",
+  "private": true,
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.98.0"
+  }
+}
